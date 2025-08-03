@@ -3,7 +3,7 @@ from model import GPT, GPTConfig
 
 max_steps = 100
 model = GPT(GPTConfig(vocab_size=50304))
-optimizer = MuonClipOptimizer(model.parameters, lr=2e-4, momentum=0.9, tau=100.0)
+optimizer = MuonClipOptimizer(model.parameters(), lr=2e-4, momentum=0.9, tau=100.0)
 
 
 
